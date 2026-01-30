@@ -37,3 +37,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Test Automation
+/target/surefire-reports/
+/target/failsafe-reports/
+# Logs
+*.log
