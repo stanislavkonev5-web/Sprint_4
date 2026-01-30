@@ -22,6 +22,7 @@ public class MainPage {
     private final By cookieButton = By.id("rcc-confirm-button");
     private final String faqQuestionIdTemplate = "accordion__heading-%d";
     private final String faqAnswerIdTemplate = "accordion__panel-%d";
+    private static final String PAGE_URL = "https://qa-scooter.praktikum-services.ru/";
 
     public void acceptCookies() {
         if (driver.findElements(cookieButton).size() > 0) {
@@ -30,7 +31,7 @@ public class MainPage {
     }
 
     public void openPage(){
-            driver.get("https://qa-scooter.praktikum-services.ru/");
+            driver.get(PAGE_URL);
     }
 
     public void clickFaqQuestion(int index) {
